@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!--This is our invisible content-->
+        <title>HGHS Fashion Club</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+ <!-- Navbar -->
+<nav class="navbar">
+  <!-- Logo -->
+  <a href="index.html" class="logo-link">
+    <img src="images/fashionlogo.png" alt="HGHS Fashion Club logo" class="logo">
+  </a>
+
+  <!-- Nav links -->
+  <ul class="nav-list">
+    <li class="nav-item"><a class="nav-link" href="index.html">HGHS Fashion Club</a></li>
+    <li class="nav-item"><a class="nav-link" href="fashiontips.html">Fashion Tips</a></li>
+    <li class="nav-item"><a class="nav-link" href="eventupdates.html">Event Updates</a></li>
+    <li class="nav-item"><a class="nav-link" href="diytutorials.html">DIY Tutorials</a></li>
+  </ul>
+</nav>
+
+
+  <div class="main-container">
+
+    <div class="club-info">
+      <h1>HGHS Fashion Club</h1>
+      <p>
+        Welcome to the Hamilton Girls High School Fashion Club!<br>
+        This is where creativity meets style. From fashion tips and DIY ideas to event updates and student style inspo, we are all about expressing who we are through what we wear.<br><br>
+        Everyone is unique look deserves to be seen, shared, and celebrated.<br>
+        Whether you are a fashion expert or just love putting together cool outfits, theres a place for you here.
+        Check out our Outfit of the Day below - updated daily! Click the arrow to see the past looks and keep up with our style streak.<br> 
+        <br>
+        Each day we feature one stunning look submitted by HGHS students. Want to be featured? Contact us by email on hka23239@my.hghs.school.nz or meet us in A9 every second week at lunch on Thursday. 
+      </p>
+      <a class="join-button" href="https://docs.google.com/forms/d/16j21vXKTOjYry7VlfxKxaniJ6HUNGLvnT-8s3K9Tp1k/edit" target="_blank">Join Us</a>
+    </div>
+
+    <div class="featured-image">
+      <img src="images/featured-dress.png" alt="Outfit of the Day" width="100%">
+    </div>
+  </div>
+  <div class="slideshow-container">
+
+    <div class="slide fade">
+      <img src="images/outfit1.png" alt="Outfit 1">
+    </div>
+ 
+    <div class="slide fade">
+      <img src="images/outfit2.png" alt="Outfit 2">
+    </div>
+ 
+    <div class="slide fade">
+      <img src="images/oufit3.png" alt="Outfit 3">
+    </div>
+ 
+    <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+    <a class="next" onclick="changeSlide(1)">&#10095;</a>
+  </div>
+
+  <div class="dots">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
+ 
+  <script>
+    // starts on slide 1
+    let slideIndex = 1;
+    let timer;
+   
+    // this function shows the slide we’re on
+    function showSlide(n) {
+      const slides = document.getElementsByClassName("slide");
+      const dots = document.getElementsByClassName("dot");
+   
+      // if it goes past last slide, loop back to first
+      if (n > slides.length) { slideIndex = 1 }
+      // if before first, go to last slide
+      if (n < 1) { slideIndex = slides.length }
+   
+      // hide all slides first
+      for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+   
+      // remove 'active' class from all dots
+      for (let i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+   
+      // show the correct slide and highlight the correct dot
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " active";
+    }
+   
+    // used for next/prev buttons
+    function changeSlide(n) {
+      showSlide(slideIndex += n);
+    }
+   
+    // used when clicking on the dots
+    function currentSlide(n) {
+      showSlide(slideIndex = n);
+    }
+   
+    // makes the slideshow go by itself every 4 seconds
+    function autoSlide() {
+      slideIndex++;
+      showSlide(slideIndex);
+      timer = setTimeout(autoSlide, 4000); // change slide every 4 secs
+    }
+   
+    // start everything
+    showSlide(slideIndex);
+    autoSlide();
+    </script>
+   
+    </body>
+    <footer class="footer">
+      <div class="footer-content">
+      <p>© 2025 HGHS Fashion Club | All Rights Reserved</p>
+      <p>Website By Hargunpreet Kaur</p>
+      <p>Contact us: hka23239@my.hghs.school.nz</p>
+      <p>Address: Hamilton Girls High School, Ward Street, Hamilton Lake, Hamilton 3204</p>
+      <p>For any other inquiries please go to student reception or A9 at lunch on Thursdays.</p>    
+      <p>All videos used are copyright free, under creative commons.</p>
+      <p>All images used are copyright free, credit to Mercedes Clement for the images on hompage. Other images taken from Pixabay, Pexels, and Unsplash.</p>
+    <ul class="footer-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="fashiontips.html">Fashion Tips</a></li>
+      <li><a href="eventupdates.html">Event Updates</a></li>
+      <li><a href="diytutorials.html">DIY Tutorials</a></li>
+    </ul>
+
+  </div>
+</footer>
+</html>

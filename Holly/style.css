@@ -1,0 +1,63 @@
+/*css for navbar*/
+li {
+    float: left;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+li a {
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 36px;
+  }
+body {
+    background-color: rgb(25 18 17);
+    font-family: Arial, Helvetica, sans-serif;
+    grid-gap: 0px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+img {
+    width: 50%;
+    border-radius: 20px;
+}
+.title {
+    color: white;
+}
+a {
+    color: white;
+}
+h3{
+    color: white;
+    font-size: 30px;
+}
+p {
+    color: white;
+    font-size: 25px;
+}
+h1 {
+    color: white;
+    font-size: 50px;
+}
+.text {
+    color: white;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+.navbar {
+    background-color: rgb(113 13 8);
+}
+.navbar a {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.navbar a:hover {
+    background-color: rgb(49, 6, 4);
+}

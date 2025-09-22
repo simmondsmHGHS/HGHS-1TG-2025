@@ -1,0 +1,182 @@
+<!doctype html>
+<html>
+<head>
+    <title>Little Fixes - Home</title>
+    <link href="https://fonts.googleapis.com/css2?family=Kalam&family=Permanent+Marker&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #d6d2b4;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            font-family: 'Kalam', cursive;
+        }
+        .header {
+            background-color: #d88a87;
+            padding: 20px;
+            color: white;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 40px;
+            font-family: 'Permanent Marker', cursive;
+        }
+        .header p {
+            margin: 5px 0;
+            font-style: italic;
+            font-family: 'Permanent Marker', cursive;
+        }
+        nav {
+            margin: 10px;
+        }
+        nav a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            font-family: 'Kalam', cursive;
+        }
+        .intro {
+            margin: 20px;
+            font-size: 18px;
+            font-family: 'Kalam', cursive;
+        }
+        .section-title {
+            font-size: 25px;
+            font-weight: bold;
+            text-decoration: underline;
+            font-family: 'Permanent Marker', cursive;
+        }
+        .hacks {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin: 20px;
+        }
+        .hack {
+            width: 200px;
+            font-family: 'Kalam', cursive;
+        }
+        .hack img {
+            width: 100%;
+            height: auto;
+        }
+        .hack p {
+            font-size: 14px;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>Welcome to Little Fixes</h1>
+        <p>Simplify. Solve. Smile. Repeat.</p>
+        <nav>
+            <a href="school_hacks.html" title="Go to W3Schools HTML section">School Hacks</a> 
+            <a href="home_hacks.html" title="Go to W3Schools HTML section">Home Hacks</a>
+            <a href="tech_hacks.html" title="Go to W3Schools HTML section">Tech Hacks</a>
+        </nav>
+    </div>
+
+    <div class="intro">
+        <p>This website shares quick and easy everyday hacks and tips to make life simpler and more fun. 
+        It is designed to help students and anyone looking for clever solutions to common problems.</p>
+    </div>
+
+    <p class="section-title">Random Everyday Hacks</p>
+
+<html>
+<head>
+    <html lang="en">
+    <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Big 3-Picture Carousel</title>
+    <style>
+      .carousel {
+        width: 3600px; /* 3 images * 900px each */
+        margin: auto;
+        overflow: hidden;
+        position: relative;
+      }
+    
+      .slides {
+        display: flex;
+        width: calc(1200px * 4); /* total width for 4 slides */
+        animation: slide 20s infinite;
+      }
+    
+      .slide {
+        width: 400px;
+        position: relative;
+      }
+    
+      .slide img {
+        width: 100%;
+        height: auto;
+        display: block;
+      }
+    
+      /* Caption style */
+      .caption {
+        position: absolute;
+        bottom: 10px;
+        width: 100%;
+        text-align: center;
+        background: rgba(0,0,0,0.5);
+        color: white;
+        padding: 5px 0;
+      }
+    
+      /* Animation to slide by 3 images at a time */
+      @keyframes slide {
+        0% { transform: translateX(0); }
+        20% { transform: translateX(0); }
+        25% { transform: translateX(-400px); }
+        45% { transform: translateX(-400px); }
+        50% { transform: translateX(-800px); }
+        70% { transform: translateX(-800px); }
+        75% { transform: translateX(-1200px); }
+        95% { transform: translateX(-1200px); }
+        100% { transform: translateX(0); }
+      }
+    </style>
+    </head>
+    <body>
+    
+    <div class="carousel">
+      <div class="slides">
+        <div class="slide">
+          <img src="images/grapes.jpg" alt="Pic 1" />
+          <div class="caption">Freeze grapes to chill your drink without watering it down </div>
+        </div>
+        <div class="slide">
+          <img src="images/aryan-dhiman-iGLLtLINSkw-unsplash.jpg" alt="Pic 2" />
+          <div class="caption">If you make a mistake, click on ctrl+v </div>
+        </div>
+        <div class="slide">
+          <img src="images/wulan-sari-3Bq8H5WgcW8-unsplash.jpg" alt="Pic 3" />
+          <div class="caption">Use a sticky note to clean dust from your keyboard.</div>
+        </div>
+        <div class="slide">
+          <img src="images/mick-haupt-7Xw9yEA8rqQ-unsplash.jpg" alt="Pic 4" />
+          <div class="caption">Use a clothespin to hold a nail when hammering to avoid hitting your fingers.</div>
+        </div>
+        <div class="slide">
+            <img src="images/haley-owens-QdwrSyJV3_4-unsplash.jpg" alt="Pic 4" />
+            <div class="caption">Use a cereal container as a trash bin in your car.</div>
+          </div>
+          <div class="slide">
+            <img src="images/tom-hermans-3w6qAk35xAg-unsplash.jpg" alt="Pic 4" />
+            <div class="caption">Rub a walnut on scratched wooden furniture to hide marks.</div>
+          </div>
+          <div class="slide">
+              <img src="images/pexels-felicity-tai-7966013.jpg" alt="Pic 4" />
+              <div class="caption">Use a muffin tin to serve condiments or snacks at parties.</div>
+            </div>
+      </div>
+    </div>
+    
+    </body>
+    </html>

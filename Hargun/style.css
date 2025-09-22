@@ -1,0 +1,407 @@
+/*page title*/
+.page-title {
+  background-color: #ffadad;
+  padding: 20px 30px;
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+  font-family: Arial, sans-serif;
+  margin: 30px auto;
+  border-radius: 10px;
+  width: fit-content;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  color: black;
+}
+/* Navbar container */
+.navbar {
+  background-color: #ffadad;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 10px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative; 
+  top: 0;
+  z-index: 1000;
+}
+
+/* Logo */
+.logo-link {
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 50px;
+  width: auto;
+  display: block;
+}
+
+/* Hamburger button */
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #9d6e3d;
+  position: absolute;
+  right: 20px;
+}
+
+/* Nav links */
+.nav-list {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-link {
+  display: block;
+  background-color: #febf99;
+  color: black;
+  text-decoration: none;
+  padding: 12px 20px;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  background-color: #b84d4d;
+  color: white;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-list {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffadad;
+    width: 100%;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    padding: 15px 0;
+  }
+
+  .nav-list.active {
+    display: flex;
+  }
+
+  .nav-link {
+    width: 100%;
+    text-align: center;
+    margin: 5px 0;
+  }
+}
+ 
+  /* fashion club page 1*/
+  .main-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 40px;
+    flex-wrap: wrap;
+    gap: 40px;
+    background-color: #fff;
+  }
+ 
+  /* left side club info */
+  .club-info {
+    max-width: 550px;
+    background-color: #f8c0c0;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+  }
+ 
+  .club-info h1 {
+    color: #000000;
+    font-size: 32px;
+    margin-bottom: 15px;
+  }
+ 
+  .club-info p {
+    font-size: large;
+    color: #000000;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+ 
+/* Join button*/
+.join-button {
+  display: inline-block;
+  background-color: #d85f5f;
+  color: white;
+  padding: 12px 24px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+}
+
+
+.join-button:hover {
+  background-color: #b84d4d;
+}
+
+
+/* right side - the image */
+.featured-image img {
+  max-width: 485px;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1s;
+}
+
+
+@keyframes fade {
+  from { opacity: 0.4; }
+  to { opacity: 1; }
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 12px;
+  color: white;
+  font-weight: bold;
+  font-size: 24px;
+  transition: 0.3s;
+  user-select: none;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.prev {
+  left: 10px;
+  transform: translateY(-50%);
+}
+
+.next {
+  right: 10px;
+  transform: translateY(-50%);
+}
+
+.dots {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 6px;
+  background-color: #ccc;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.4s ease;
+}
+
+.active, .dot:hover {
+  background-color: #d85f5f;
+}
+
+/* fashion tips page 2*/
+.tips-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;                    
+  padding: 20px 40px;             
+}
+
+.tip-card {
+  background-color: #febf99;    
+  padding: 15px;
+  border-radius: 15px;              
+  text-align: center;                  
+  font-family: Arial, sans-serif;        
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.tip-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.tip-card img {
+  width: 100%;         
+  border-radius: 50%;     
+  margin-bottom: 10px;    
+  object-fit: cover;     
+}
+
+.tip-card .caption {
+  background-color: #ff9898;           
+  color: #000;                          
+  padding: 10px 12px;                   
+  border-radius: 8px;                   
+  margin: 12px auto 0;                  
+  width: calc(100% - 30px);             
+  text-align: center;                    
+  font-size: large;                     
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08); 
+  font-weight: 500;                      
+  line-height: 1.4;                     
+}
+
+/* event updates page 3*/
+.events-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 20px 40px;
+}
+
+.event-row {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 15px;
+  background-color: #ffe6e6;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(255, 192, 203, 0.5);
+}
+
+.event-pic img {
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.event-text p {
+  background-color: #f8c0c0;
+  padding: 15px;
+  border-radius: 15px;
+  font-family: Arial, sans-serif;
+  color: #000000;
+  line-height: 1.5;
+  width: 80%;
+  font-size:large; 
+}
+
+/*DIY tutorials page 4 */
+.video-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 40px;
+  justify-content: center;
+}
+
+.video-card {
+  flex: 1 1 300px;
+  max-width: 320px;
+  background-color: #fff0f5;
+  border-radius: 16px;           
+  box-shadow: 0 4px 10px rgba(255, 192, 203, 0.5);
+  padding: 15px;
+  box-sizing: border-box;
+  text-align: center;
+  border: 2px solid #ffa07a;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.video-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 6px 16px rgba(255, 105, 180, 0.6);
+}
+
+.video-card iframe {
+  width: 100%;
+  height: 200px;
+  border-radius: 12px;
+  border: none;
+}
+
+.video-description {
+  margin-top: 10px;
+  font-size: large;
+  color: #000000;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+/* Slideshow*/
+.slideshow-container {
+  max-width: 1000px;
+  height: 600px;
+  margin: 30px auto;
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.slideshow-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.footer {
+  background-color: #ffadad;
+  color: black;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+  border-top: 3px solid #febf99; 
+  font-family: Arial, sans-serif;
+  grid-column: 1 / -1;
+  width: 100%;  
+}
+
+.footer-content p {
+  margin: 8px 0;
+  font-size: 14px;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 12px 0 0;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.footer-links a {
+  color: black;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer-links a:hover {
+  color: #9d6e3d;
+}

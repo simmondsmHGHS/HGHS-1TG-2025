@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!--This is our invisible content-->
+        <title>Everyday Hacks</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <!--This is our visible content-->
+        <div class="nav-bar">
+
+</html>
+<title>Little Fixes - Home</title>
+    <link href="https://fonts.googleapis.com/css2?family=Kalam&family=Permanent+Marker&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #cb8585ff;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            font-family: 'Kalam', cursive;
+        }
+        .header {
+            background-color: #74785d;
+            padding: 20px;
+            color: #e6dcdc
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 40px;
+            font-family: 'Permanent Marker', cursive;
+        }
+        .header p {
+            margin: 5px 0;
+            font-style: italic;
+            font-family: 'Permanent Marker', cursive;
+        }
+        nav {
+            margin: 10px;
+        }
+        nav a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #312424
+            font-weight bold;
+            font-family: 'Kalam', cursive;
+        }
+        .intro {
+            margin: 20px;
+            font-size: 18px;
+            font-family: 'Kalam', cursive;
+        }
+        .section-title {
+            font-size: 25px;
+            font-weight: bold;
+            text-decoration: underline;
+            font-family: 'Permanent Marker', cursive;
+        }
+        .hacks {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin: 20px;
+        }
+        .hack {
+            width: 200px;
+            font-family: 'Kalam', cursive;
+        }
+        .hack img {
+            width: 100%;
+            height: auto;
+        }
+        .hack p {
+            font-size: 14px;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+
+        <div class="header">
+            <h1>Welcome to Little Fixes</h1>
+            <p>Simplify. Solve. Smile. Repeat.</p>
+            <nav>
+                <a href="school_hacks.html" title="Go to W3Schools HTML section">School Hacks</a> 
+                <a href="index.html" title="Go to W3Schools HTML section">Home Page</a>
+                <a href="home_hacks.html" title="Go to W3Schools HTML section">Home Hacks</a>
+            </nav>
+        </div>
+
+    <p class="section-title">Tech Hacks</p>
+
+    <html lang="en">
+        <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Big 3-Picture Carousel</title>
+        <style>
+          .carousel {
+            width: 3600px; 
+            margin: auto;
+            overflow: hidden;
+            position: relative;
+          }
+        
+          .slides {
+            display: flex;
+            width: calc(1200px * 4); /* total width for 4 slides */
+            animation: slide 20s infinite;
+          }
+        
+          .slide {
+            width: 400px;
+            position: relative;
+          }
+        
+          .slide img {
+            width: 100%;
+            height: auto;
+            display: block;
+          }
+        
+          /* Caption style */
+          .caption {
+            position: absolute;
+            bottom: 10px;
+            width: 100%;
+            text-align: center;
+            background: rgba(0,0,0,0.5);
+            color: white;
+            padding: 5px 0;
+          }
+  
+          @keyframes slide {
+            0% { transform: translateX(0); }
+            20% { transform: translateX(0); }
+            25% { transform: translateX(-400px); }
+            45% { transform: translateX(-400px); }
+            50% { transform: translateX(-800px); }
+            70% { transform: translateX(-800px); }
+            75% { transform: translateX(-1200px); }
+            95% { transform: translateX(-1200px); }
+            100% { transform: translateX(0); }
+          }
+        </style>
+        </head>
+        <body>
+        
+        <div class="carousel">
+          <div class="slides">
+            <div class="slide">
+              <img src="images/pexels-hasanalbari-1202575.jpg" alt="Pic 1" />
+              <div class="caption">Charge your phone faster by switching to airplane mode while charging.</div>
+            </div>
+            <div class="slide">
+              <img src="images/pexels-deyvi-romero-15310-89955.jpg" alt="Pic 2" />
+              <div class="caption">Use dark mode on apps and websites to save battery and reduce eye strain.</div>
+            </div>
+            <div class="slide">
+              <img src="images/Screenshot 2025-09-08 145348.png" alt="Pic 3" />
+              <div class="caption">Use cloud storage (like Google Drive or Dropbox) to access files from any device, anywhere</div>
+            </div>
+            <div class="slide">
+              <img src="images/pexels-shkrabaanthony-5244033.jpg" alt="Pic 4" />
+              <div class="caption">Create a custom ringtone for specific contacts, so you know who is calling without looking. </div>
+            </div>
+            <div class="slide">
+                <img src="images/pexels-hasanalbari-1202575.jpg" alt="Pic 4" />
+                <div class="caption">Use a portable charger for on-the-go power when you are traveling or away from an outlet.</div>
+              </div>
+              <div class="slide">
+                <img src="images/chirayu-trivedi-UP4_z7s_lmI-unsplash.jpg" alt="Pic 4" />
+                <div class="caption">Use (like Siri or Google Assistant) to set reminders or ask for quick info.</div>
+              </div>
+          </div>
+        </div>
+        
+        </body>
+        </html>
